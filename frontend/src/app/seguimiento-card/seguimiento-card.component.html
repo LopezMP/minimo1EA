@@ -1,0 +1,18 @@
+<div class="seguimiento-card" *ngIf="seguimiento">
+
+    <div>
+        <h2>NOMBRE: {{seguimiento.nombre}}</h2>
+        <p>Fecha de seguimiento: {{seguimiento.fecha}}</p>
+        <p>DNI: {{seguimiento.dni}}</p>
+        <p>Telefono de contacto: {{seguimiento.telefono}}</p>
+        <p>Fiebre: {{seguimiento.fiebre}}</p>
+        <p>Tos: {{seguimiento.tos}}</p>
+        <p>Dificultad respiratoria: {{seguimiento.respiracion}}</p>
+        <p>Malestar general: {{seguimiento.malestar}}</p>
+    </div>
+
+    <div class="center">
+        <button (click)="deleteSeguimiento(seguimiento._id)" class="button"> BORRAR </button>
+    </div>
+
+</div>

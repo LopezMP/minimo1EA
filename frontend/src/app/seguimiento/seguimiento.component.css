@@ -1,0 +1,43 @@
+.text {
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.addInstitution{    
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;    
+}
+.headerInstitution {
+    background: yellowgreen;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+.addInstitution p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.addInstitution input{
+    box-sizing: border-box;
+    display: block;
+    width: 400px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+
+.seguimientos{
+    padding: 20px;
+    background: rgb(242, 255, 217);
+}

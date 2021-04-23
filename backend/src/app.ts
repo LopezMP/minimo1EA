@@ -4,9 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import bodyParser from'body-parser';
 //Importamos fichero de rutas (cambia)
-//En el app.ts importar rutas
-
-
+import seguimientoRoutes from './routes/seguimiento.routes'
 
 //Inicializamos express
 const app = express();
@@ -23,7 +21,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 //Llama a las rutas de la API (Cambia) 
-//app.use('/institution', institutionRoutes);
+app.use('/seguimiento', seguimientoRoutes);
 
 //Exportamos fichero como 'app'
 export default app;

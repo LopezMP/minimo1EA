@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import{SeguimientoComponent} from './seguimiento/seguimiento.component';
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: '/institution' },
+  { path: 'seguimiento', component: SeguimientoComponent},
+  { path: '**', component: SeguimientoComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
